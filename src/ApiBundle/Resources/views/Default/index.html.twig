@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Panel administracyjny</title>
 </head>
 <body>
-	Witaj swiecie
-	{% if app.user %}
-   jesteś zalogowany, <a href="{{ path('fos_user_security_logout') }}">wyloguj się</a><br>
-{% else %}
-    nie jesteś zalogowany, <a href="{{  path('fos_user_security_login') }}">zaloguj się</a>
-{% endif %}
+	<header>
+		<section class="header">
+			<nav id="main-menu">
+				<p>Witaj swiecie!</p>
+				{% if app.user %}
+		   		jesteś zalogowany, 
+				<ul>
+					<li><a href="{{ path('fos_user_security_logout') }}">wyloguj się</a><br></li>
+					{% else %}
+		    	nie jesteś zalogowany, 
+		    		<li><a href="{{  path('fos_user_security_login') }}">zaloguj się</a></li>
+					{% endif %}
+			</nav>
+		</section>>
+
+	<header>
 </body>
 </html>
 
