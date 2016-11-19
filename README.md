@@ -1,4 +1,6 @@
 api-integration
 ===============
 
-A Symfony project created on November 19, 2016, 5:42 pm.
+Install:
+
+1. In root directory run composer install
