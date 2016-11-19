@@ -1,6 +1,18 @@
-Witaj świecie
-{% if app.user %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel administracyjny</title>
+</head>
+<body>
+	Witaj swiecie
+	{% if app.user %}
    jesteś zalogowany, <a href="{{ path('fos_user_security_logout') }}">wyloguj się</a><br>
 {% else %}
     nie jesteś zalogowany, <a href="{{  path('fos_user_security_login') }}">zaloguj się</a>
 {% endif %}
+</body>
+</html>
+
+
+
+
